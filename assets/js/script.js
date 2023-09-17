@@ -13,4 +13,4 @@ const resultYear = document.querySelector("#result-year");
 const resultMonth = document.querySelector("#result-month");
 const resultDay = document.querySelector("#result-day");
 
-console.log(dayInput, monthInput, yearInput, calculateBtn, resultDay, resultMonth, resultYear);
+// Validation

@@ -192,6 +192,14 @@ table {
   border: 1px solid var(--purple);
 }
 
+.invalid {
+  border: 1px solid var(--light-red);
+}
+
+.visible {
+  display: block;
+}
+
 .err-msg {
   font-size: 0.7rem;
   padding: 0.5em 0;
