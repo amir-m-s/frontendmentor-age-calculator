@@ -193,11 +193,11 @@ table {
 }
 
 .invalid {
-  border: 1px solid var(--light-red);
+  border: 1px solid var(--light-red) !important;
 }
 
 .visible {
-  display: block;
+  display: block !important;
 }
 
 .err-msg {
