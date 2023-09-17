@@ -2,7 +2,23 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
+
+:root {
+  /* Primary Colors */
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-gray: hsl(0, 0%, 86%);
+  --smoke-gray: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+
 html,
 body,
 div,
@@ -107,6 +123,11 @@ section {
 }
 body {
   line-height: 1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--off-white);
 }
 ol,
 ul {
@@ -126,4 +147,76 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+}
+
+.main {
+  position: relative;
+  width: 40rem;
+  background-color: var(--white);
+  border-radius: 1em 1em 10em 1em;
+}
+
+.input-section {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: left;
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.input-section label {
+  padding: 0.5rem 0;
+  display: block;
+  font-weight: bold;
+  color: var(--smoke-gray);
+}
+
+.input-section input {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.15em 0.25em;
+  outline: none;
+  border: 1px solid var(--off-black);
+  border-radius: 0.2em;
+  transition: 0.3s ease-in-out;
+}
+
+.input-section input:focus {
+  border: 1px solid var(--purple);
+}
+
+.calculate-btn {
+  position: absolute;
+  top: 23%;
+  right: 6%;
+  width: 5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--purple);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.calculate-btn:hover {
+  background-color: var(--off-black);
+}
+
+.output-section {
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: italic;
+  border-top: 1px solid var(--light-gray);
+  padding: 0.6em 0.5em;
+}
+
+.output-section span {
+  color: var(--purple);
 }

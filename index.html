@@ -3,17 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Poppins font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
-    Day DD Month MM Year YYYY -- years -- months -- days
+    <main class="main">
+      <div class="input-section">
+        <div>
+          <label for="day-input">Day</label>
+          <input type="text" id="day-input" placeholder="DD" />
+        </div>
+        <div>
+          <label for="month-input">Month</label>
+          <input type="text" id="month-input" placeholder="MM" />
+        </div>
+        <div>
+          <label for="year-input">Year</label>
+          <input type="text" id="year-input" placeholder="YYYY" />
+        </div>
+      </div>
+      <button type="button" class="btn calculate-btn">
+        <img src="./assets/images/icon-arrow.svg" />
+      </button>
+      <div class="output-section">
+        <div><span id="result-year">--</span> Years</div>
+        <div><span id="result-months">--</span> Months</div>
+        <div><span id="result-days">--</span> Days</div>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
