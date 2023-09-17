@@ -150,8 +150,10 @@ table {
 }
 
 .attribution {
+  font-family: "Poppins";
   position: fixed;
   bottom: 0;
+  padding: 0.25em 0.5em;
 }
 
 .main {
