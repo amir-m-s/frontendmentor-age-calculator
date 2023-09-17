@@ -65,6 +65,8 @@ function dmValidation(e) {
   console.log(errMsgId);
 }
 
+
+// Add Event Listeners
 dayInput.addEventListener("change", validate);
 monthInput.addEventListener("change", validate);
 yearInput.addEventListener("change", validate);
