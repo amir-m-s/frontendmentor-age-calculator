@@ -28,10 +28,8 @@ function validate(e) {
 
   // Check if target input is empty
   if (targetValue == "") {
-    if (!target.classList.contains("invalid")) {
-      target.classList.add("invalid");
-      emptyMsg.classList.add("visible");
-    }
+    target.classList.add("invalid");
+    emptyMsg.classList.add("visible");
   } else {
     target.classList.remove("invalid");
     emptyMsg.classList.remove("visible");
