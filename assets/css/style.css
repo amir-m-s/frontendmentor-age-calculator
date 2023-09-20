@@ -180,7 +180,7 @@ table {
 
 .input-section input {
   width: 100%;
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: bold;
   padding: 0.15em 0.25em;
   outline: none;
@@ -202,7 +202,7 @@ table {
 }
 
 .err-msg {
-  font-size: 0.7rem;
+  font-size: 0.7em;
   padding: 0.5em 0;
   color: var(--light-red);
 }
@@ -233,7 +233,7 @@ table {
 }
 
 .output-section {
-  font-size: 5rem;
+  font-size: 5em;
   font-weight: 800;
   font-style: italic;
   border-top: 1px solid var(--light-gray);
@@ -242,4 +242,64 @@ table {
 
 .output-section span {
   color: var(--purple);
+}
+
+@media (max-width: 750px) {
+  body {
+    display: block;
+    font-size: 0.9rem;
+  }
+
+  .main {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .input-section {
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 1em;
+  }
+
+  .input-section input {
+    font-size: 1.7rem;
+  }
+
+  .calculate-btn {
+    top: 22%;
+  }
+
+  .output-section {
+    font-size: 4.6em;
+  }
+
+  .attribution {
+    font-size: 90%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .input-section {
+    display: block;
+  }
+
+  .input-section input {
+    width: 50%;
+  }
+
+  .calculate-btn {
+    right: 5%;
+  }
+
+  .output-section {
+    padding-left: 1em;
+    font-size: 3em;
+  }
+
+  .attribution {
+    font-size: 80%;
+    text-align: center;
+  }
 }
